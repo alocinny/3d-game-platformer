@@ -19,9 +19,10 @@ tonemap_mode = 2
 glow_enabled = true
 
 [node name="Main" type="Node3D"]
+transform = Transform3D(0.45794, 0, 0, 0, 0.45794, 0, 0, 0, 0.45794, 0, 0, 0)
 
 [node name="Camera3D" type="Camera3D" parent="."]
-transform = Transform3D(-0.224194, -0.515507, 0.827036, -0.0163632, 0.850511, 0.525703, -0.974407, 0.104327, -0.199115, 4.48348, 7.49857, 3.37705)
+transform = Transform3D(-0.52601, -1.2095, 1.94041, -0.0383918, 1.99549, 1.23342, -2.28618, 0.244774, -0.467168, 4.48348, 7.49857, 3.37705)
 script = ExtResource("1_sugp2")
 offset = Vector3(0, 2.605, -1.88)
 follow_speed = 6.0
@@ -41,7 +42,186 @@ speed = 3.0
 jump_velocity = 9.4
 
 [node name="World" parent="." instance=ExtResource("2_sugp2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
 
 [node name="coins" type="Node3D" parent="World"]
 
 [node name="coin-gold" parent="World/coins" instance=ExtResource("4_jyhfs")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 5.2, 5.931)
+
+[node name="coin-gold2" parent="World/coins" instance=ExtResource("4_jyhfs")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0740517, 5.2, 8.51854)
+
+[node name="coin-gold3" parent="World/coins" instance=ExtResource("4_jyhfs")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0763956, 3.2, 2.798)
+
+[node name="coin-gold5" parent="World/coins" instance=ExtResource("4_jyhfs")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.565, 3.7, 6.62259)
+
+[node name="coin-gold6" parent="World/coins" instance=ExtResource("4_jyhfs")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.398, 4, 9.54911)
+
+[node name="coin-gold7" parent="World/coins" instance=ExtResource("4_jyhfs")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.15192, 4.59405, 10.9697)
+
+[node name="coin-gold4" parent="World/coins" instance=ExtResource("4_jyhfs")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.2, 4.147)
+
+[node name="coin-gold8" parent="World/coins" instance=ExtResource("4_jyhfs")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.558077, 5, 7.05833)
+
+[node name="coin-gold9" parent="World/coins" instance=ExtResource("4_jyhfs")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.2627, 5, 9.81032)
+
+[node name="coin-gold10" parent="World/coins" instance=ExtResource("4_jyhfs")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.945673, 5, 7.27356)
+
+[node name="coin-gold11" parent="World/coins" instance=ExtResource("4_jyhfs")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.6212, 5, 6.32752)
+
+[node name="coin-gold12" parent="World/coins" instance=ExtResource("4_jyhfs")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.30416, 5, 7.97104)
+
+[node name="coin-gold13" parent="World/coins" instance=ExtResource("4_jyhfs")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.45846, 2.73827, 4.958)
+
+[node name="coin-gold14" parent="World/coins" instance=ExtResource("4_jyhfs")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.022316, 1.5, 1.89313)
+
+[node name="coin-gold15" parent="World/coins" instance=ExtResource("4_jyhfs")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0345513, 2.63766, -0.501673)
+
+[node name="coin-gold18" parent="World/coins" instance=ExtResource("4_jyhfs")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.57632, -2.052)
+
+[node name="coin-gold19" parent="World/coins" instance=ExtResource("4_jyhfs")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0529332, 1.69288, -2.79639)
+
+[node name="coin-gold20" parent="World/coins" instance=ExtResource("4_jyhfs")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00200073, 2.26961, -3.63366)
+
+[node name="coin-gold21" parent="World/coins" instance=ExtResource("4_jyhfs")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0839429, 1.5, -4.4089)
+
+[node name="coin-gold22" parent="World/coins" instance=ExtResource("4_jyhfs")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0219235, 1.5, -5.24616)
+
+[node name="coin-gold23" parent="World/coins" instance=ExtResource("4_jyhfs")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.660289, 1.5, -4.68799)
+
+[node name="coin-gold24" parent="World/coins" instance=ExtResource("4_jyhfs")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.735148, 1.5, -4.84304)
+
+[node name="coin-gold28" parent="World/coins" instance=ExtResource("4_jyhfs")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0531764, 1.18068, -8.25411)
+
+[node name="coin-gold30" parent="World/coins" instance=ExtResource("4_jyhfs")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.2986, 5, 8.79857)
+
+[node name="coin-gold31" parent="World/coins" instance=ExtResource("4_jyhfs")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.2627, 5, 8.40332)
+
+[node name="coin-gold32" parent="World/coins" instance=ExtResource("4_jyhfs")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.112, 5, 8.01408)
+
+[node name="coin-gold33" parent="World/coins" instance=ExtResource("4_jyhfs")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.45198, 5, 6.32752)
+
+[node name="coin-gold34" parent="World/coins" instance=ExtResource("4_jyhfs")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.39644, 5, 8.06361)
+
+[node name="coin-gold35" parent="World/coins" instance=ExtResource("4_jyhfs")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.45846, 2.73827, 5.55042)
+
+[node name="coin-gold38" parent="World/coins" instance=ExtResource("4_jyhfs")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00908615, 2.07088, -1.27692)
+
+[node name="coin-gold39" parent="World/coins" instance=ExtResource("4_jyhfs")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0529332, 1.77388, 0.242561)
+
+[node name="coin-gold40" parent="World/coins" instance=ExtResource("4_jyhfs")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.43922, 5.2, -22.2206)
+
+[node name="coin-gold42" parent="World/coins" instance=ExtResource("4_jyhfs")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.418288, 3.2, -17.0367)
+
+[node name="coin-gold51" parent="World/coins" instance=ExtResource("4_jyhfs")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.05264, 3.7, -21.0347)
+
+[node name="coin-gold52" parent="World/coins" instance=ExtResource("4_jyhfs")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.99429, 4, -23.4642)
+
+[node name="coin-gold53" parent="World/coins" instance=ExtResource("4_jyhfs")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.02576, 4.59405, -21.1102)
+
+[node name="coin-gold54" parent="World/coins" instance=ExtResource("4_jyhfs")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.16964, 3.2, -18.3803)
+
+[node name="coin-gold55" parent="World/coins" instance=ExtResource("4_jyhfs")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.57238, 5, -21.2915)
+
+[node name="coin-gold58" parent="World/coins" instance=ExtResource("4_jyhfs")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.365879, 5, -20.6966)
+
+[node name="coin-gold59" parent="World/coins" instance=ExtResource("4_jyhfs")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.90851, 5, -23.2323)
+
+[node name="coin-gold60" parent="World/coins" instance=ExtResource("4_jyhfs")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.94821, 2.73827, -19.5526)
+
+[node name="coin-gold62" parent="World/coins" instance=ExtResource("4_jyhfs")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.018013, 2.63766, -13.5981)
+
+[node name="coin-gold63" parent="World/coins" instance=ExtResource("4_jyhfs")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0343497, 2.071, -12.9779)
+
+[node name="coin-gold64" parent="World/coins" instance=ExtResource("4_jyhfs")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0576013, 1.77388, -14.232)
+
+[node name="coin-gold65" parent="World/coins" instance=ExtResource("4_jyhfs")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0161984, 2.57632, -12.0532)
+
+[node name="coin-gold67" parent="World/coins" instance=ExtResource("4_jyhfs")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0297962, 2.26961, -10.4731)
+
+[node name="coin-gold68" parent="World/coins" instance=ExtResource("4_jyhfs")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0998058, 1.5, -9.66377)
+
+[node name="coin-gold69" parent="World/coins" instance=ExtResource("4_jyhfs")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0483933, 1.5, -8.83537)
+
+[node name="coin-gold70" parent="World/coins" instance=ExtResource("4_jyhfs")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.512999, 1.5, -9.45213)
+
+[node name="coin-gold71" parent="World/coins" instance=ExtResource("4_jyhfs")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.709721, 1.5, -9.17332)
+
+[node name="coin-gold73" parent="World/coins" instance=ExtResource("4_jyhfs")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00230764, 1.1819, -7.50912)
+
+[node name="coin-gold76" parent="World/coins" instance=ExtResource("4_jyhfs")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.0545, 3.2, -18.0521)
+
+[node name="coin-gold77" parent="World/coins" instance=ExtResource("4_jyhfs")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.131427, 5, -22.4268)
+
+[node name="coin-gold80" parent="World/coins" instance=ExtResource("4_jyhfs")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.365879, 5, -20.6966)
+
+[node name="coin-gold81" parent="World/coins" instance=ExtResource("4_jyhfs")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.49369, 5, -21.8132)
+
+[node name="coin-gold82" parent="World/coins" instance=ExtResource("4_jyhfs")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.13701, 2.73827, -18.8)
+
+[node name="coin-gold83" parent="World/coins" instance=ExtResource("4_jyhfs")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0937595, 1.5, -16.1334)
+
+[node name="coin-gold86" parent="World/coins" instance=ExtResource("4_jyhfs")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0483629, 1.69288, -11.3325)
+
+[node name="coin-gold47" parent="World/coins" instance=ExtResource("4_jyhfs")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.040339, 1.18117, -6.02141)
+
+[node name="coin-gold48" parent="World/coins" instance=ExtResource("4_jyhfs")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0339623, 1.1819, -6.76564)

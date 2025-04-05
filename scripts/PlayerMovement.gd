@@ -40,4 +40,10 @@ func change_velocity(movement_vector: Vector3, delta):
 		#var target_rotation = Quaternion(Transform3D().looking_at(look_direction, Vector3.UP).basis)
 		#var smooth_rotation = Quaternion(basis).slerp(target_rotation, delta * 5.0)
 		#
-		#global_transform.basis = Basis(smooth_rotation)
+		#global_transform.basis = Basis(smooth_rotati
+		
+var moedas_coletadas: int = 0
+
+func adicionar_moeda(valor: int = 1):
+	moedas_coletadas += valor
+	print("moedas: %d" % moedas_coletadas)
