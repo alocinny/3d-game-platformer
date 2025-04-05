@@ -1,0 +1,42 @@
+[gd_scene load_steps=7 format=3 uid="uid://b4kg0sxt3y7xk"]
+
+[ext_resource type="PackedScene" uid="uid://cvkyujcv64d36" path="res://scenes/player.tscn" id="1_0wfyh"]
+[ext_resource type="Script" uid="uid://baw781px83vcv" path="res://scripts/CameraFollow.gd" id="1_sugp2"]
+[ext_resource type="PackedScene" uid="uid://bqwl2ykns2jxd" path="res://scenes/world.tscn" id="2_sugp2"]
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_0wfyh"]
+sky_horizon_color = Color(0.662243, 0.671743, 0.686743, 1)
+ground_horizon_color = Color(0.662243, 0.671743, 0.686743, 1)
+
+[sub_resource type="Sky" id="Sky_sugp2"]
+sky_material = SubResource("ProceduralSkyMaterial_0wfyh")
+
+[sub_resource type="Environment" id="Environment_jyhfs"]
+background_mode = 2
+sky = SubResource("Sky_sugp2")
+tonemap_mode = 2
+glow_enabled = true
+
+[node name="Main" type="Node3D"]
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(-0.224194, -0.515507, 0.827036, -0.0163632, 0.850511, 0.525703, -0.974407, 0.104327, -0.199115, 4.48348, 7.49857, 3.37705)
+script = ExtResource("1_sugp2")
+offset = Vector3(0, 2.605, -1.88)
+follow_speed = 6.0
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_jyhfs")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(-0.866025, 0.269385, -0.421226, 0, 0.842452, 0.538771, 0.5, 0.466589, -0.729585, 0, 0, 0)
+light_color = Color(1, 1, 0.768627, 1)
+shadow_enabled = true
+
+[node name="Player" parent="." instance=ExtResource("1_0wfyh")]
+unique_name_in_owner = true
+transform = Transform3D(0.414733, 0, 0, 0, 0.414733, 0, 0, 0, 0.414733, 0, 5.59986, 5.36051)
+speed = 3.0
+jump_velocity = 9.4
+
+[node name="World" parent="." instance=ExtResource("2_sugp2")]

@@ -1,0 +1,25 @@
+[gd_scene load_steps=6 format=3 uid="uid://cvkyujcv64d36"]
+
+[ext_resource type="Script" uid="uid://cjsrx5y5qxhbu" path="res://scripts/PlayerMovement.gd" id="1_g2els"]
+[ext_resource type="Texture2D" uid="uid://cvj2t1jm8gpme" path="res://icon.svg" id="2_qhqgy"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_dqkch"]
+albedo_texture = ExtResource("2_qhqgy")
+uv1_offset = Vector3(-0.5, 0, 0)
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_u8vuu"]
+material = SubResource("StandardMaterial3D_dqkch")
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_3vyb7"]
+
+[node name="Player" type="CharacterBody3D"]
+script = ExtResource("1_g2els")
+speed = 5.0
+jump_velocity = 10.0
+gravity = 30.0
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+mesh = SubResource("CapsuleMesh_u8vuu")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("CapsuleShape3D_3vyb7")
