@@ -14,8 +14,8 @@ size = Vector2(15, 40)
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_dwbse"]
 albedo_color = Color(0, 0.756863, 0.541176, 1)
 
-[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_fj7yv"]
-data = PackedVector3Array(5, 0, 5, -5, 0, 5, 5, 0, -5, -5, 0, 5, -5, 0, -5, 5, 0, -5)
+[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_i7141"]
+data = PackedVector3Array(7.5, 0, 20, -7.5, 0, 20, 7.5, 0, -20, -7.5, 0, 20, -7.5, 0, -20, 7.5, 0, -20)
 
 [node name="World" type="Node3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -1.53059)
@@ -27,8 +27,9 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -6.26208)
 mesh = SubResource("PlaneMesh_f3sb7")
 surface_material_override/0 = SubResource("StandardMaterial3D_dwbse")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Ground"]
-shape = SubResource("ConcavePolygonShape3D_fj7yv")
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="Ground"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -6.26208)
+shape = SubResource("ConcavePolygonShape3D_i7141")
 
 [node name="tree" parent="." instance=ExtResource("1_tlwt5")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.874985, 4.99878, -23.2947)
@@ -53,6 +54,27 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.463715, 5, -23.5888)
 
 [node name="barrel" parent="." instance=ExtResource("4_ioo17")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00418091, 4.94055, -23.3745)
+
+[node name="tree5" parent="." instance=ExtResource("1_tlwt5")]
+transform = Transform3D(-0.745674, 0, 0.666311, 0, 1, 0, -0.666311, 0, -0.745674, 0.16648, 4.99878, 9.93071)
+
+[node name="tree6" parent="." instance=ExtResource("1_tlwt5")]
+transform = Transform3D(-0.745674, -0.00644255, 0.66628, 0, 0.999953, 0.00966898, -0.666311, 0.0072099, -0.745639, -0.934068, 4.98619, 9.63701)
+
+[node name="grass9" parent="." instance=ExtResource("3_gbfbk")]
+transform = Transform3D(-0.745674, 0, 0.666311, 0, 1, 0, -0.666311, 0, -0.745674, -1.28074, 5, 9.30953)
+
+[node name="grass10" parent="." instance=ExtResource("3_gbfbk")]
+transform = Transform3D(-0.745674, 0, 0.666311, 0, 1, 0, -0.666311, 0, -0.745674, -0.0112006, 5, 9.47087)
+
+[node name="grass11" parent="." instance=ExtResource("3_gbfbk")]
+transform = Transform3D(-0.548527, 0, 0.836133, 0, 1, 0, -0.836133, 0, -0.548527, 0.673541, 4.99992, 9.93093)
+
+[node name="grass12" parent="." instance=ExtResource("3_gbfbk")]
+transform = Transform3D(-0.745674, 0, 0.666311, 0, 1, 0, -0.666311, 0, -0.745674, -0.336155, 5, 9.87598)
+
+[node name="barrel3" parent="." instance=ExtResource("4_ioo17")]
+transform = Transform3D(-0.745674, 0, 0.666311, 0, 1, 0, -0.666311, 0, -0.745674, -0.542262, 4.94055, 9.40442)
 
 [node name="block-grass-overhang-low2" parent="." instance=ExtResource("5_wse8f")]
 transform = Transform3D(1.74385, 0, 0.979282, 0, 2, 0, -0.979282, 0, 1.74385, 3.21526, 2.7929, -23.2576)
@@ -97,49 +119,28 @@ transform = Transform3D(-0.960493, 0, -0.278304, 0, 1, 0, 0.278304, 0, -0.960493
 transform = Transform3D(-0.990748, 0, 0.135716, 0, 1, 0, -0.135716, 0, -0.990748, 0, 3.499, 5.05549)
 
 [node name="crate6" parent="." instance=ExtResource("6_ic0uy")]
-transform = Transform3D(-0.790925, 0, 0.611913, 0, 1, 0, -0.611913, 0, -0.790925, 0, 3, 4.99338)
+transform = Transform3D(-0.790925, 0, 0.611913, 0, 1, 0, -0.611913, 0, -0.790925, -0.75162, 3, 4.99338)
 
 [node name="block-grass-hexagon5" parent="." instance=ExtResource("2_pkg7o")]
 transform = Transform3D(1.5, 0, 0, 0, 1.5, 0, 0, 0, 1.5, 0, 0, -9.23799)
 
-[node name="tree3" parent="." instance=ExtResource("1_tlwt5")]
-transform = Transform3D(-0.997228, 0, -0.0744045, 0, 1, 0, 0.0744045, 0, -0.997228, 0, 4.99878, 9.1797)
-
-[node name="tree4" parent="." instance=ExtResource("1_tlwt5")]
-transform = Transform3D(-0.997228, 0.000719415, -0.074401, 0, 0.999953, 0.00966898, 0.0744045, 0.00964218, -0.997181, 0, 4.98619, 9.76819)
-
 [node name="block-grass-hexagon7" parent="." instance=ExtResource("2_pkg7o")]
 transform = Transform3D(-4.2601, 0, -2.61756, 0, 5, 0, 2.61756, 0, -4.2601, 0, 0, 7.92876)
 
-[node name="grass5" parent="." instance=ExtResource("3_gbfbk")]
-transform = Transform3D(-0.997228, 0, -0.0744045, 0, 1, 0, 0.0744045, 0, -0.997228, 0, 5, 9.7905)
-
-[node name="grass6" parent="." instance=ExtResource("3_gbfbk")]
-transform = Transform3D(-0.997228, 0, -0.0744045, 0, 1, 0, 0.0744045, 0, -0.997228, 0, 5, 8.98847)
-
-[node name="grass7" parent="." instance=ExtResource("3_gbfbk")]
-transform = Transform3D(-0.982665, 0, 0.185392, 0, 1, 0, -0.185392, 0, -0.982665, 0, 4.99992, 8.81479)
-
-[node name="grass8" parent="." instance=ExtResource("3_gbfbk")]
-transform = Transform3D(-0.997228, 0, -0.0744045, 0, 1, 0, 0.0744045, 0, -0.997228, 0, 5, 9.50358)
-
-[node name="barrel2" parent="." instance=ExtResource("4_ioo17")]
-transform = Transform3D(-0.997228, 0, -0.0744045, 0, 1, 0, 0.0744045, 0, -0.997228, 0, 4.94055, 9.32469)
-
 [node name="block-grass-overhang-low7" parent="." instance=ExtResource("5_wse8f")]
-transform = Transform3D(-1.66615, 0, -1.10632, 0, 2, 0, 1.10632, 0, -1.66615, 0, 2.7929, 9.44703)
+transform = Transform3D(-1.66615, 0, -1.10632, 0, 2, 0, 1.10632, 0, -1.66615, -3.3755, 2.7929, 9.44703)
 
 [node name="block-grass-overhang-low8" parent="." instance=ExtResource("5_wse8f")]
-transform = Transform3D(-0.888702, 0.0416643, -1.79122, 0.021303, 1.99956, 0.0359411, 1.79158, -0.00310863, -0.88896, 0, 2.48924, 6.72687)
+transform = Transform3D(-0.888702, 0.0416643, -1.79122, 0.021303, 1.99956, 0.0359411, 1.79158, -0.00310863, -0.88896, -3.61778, 2.48924, 6.72687)
 
 [node name="block-grass-hexagon8" parent="." instance=ExtResource("2_pkg7o")]
 transform = Transform3D(-2.4972, 0, -1.66253, 0, 3, 0, 1.66253, 0, -2.4972, 0, 0, 4.00766)
 
 [node name="block-grass-overhang-low9" parent="." instance=ExtResource("5_wse8f")]
-transform = Transform3D(-0.851223, 0, 0.524803, 0, 1, 0, -0.524803, 0, -0.851223, 0, 2.23827, 5.23588)
+transform = Transform3D(-0.851223, 0, 0.524803, 0, 1, 0, -0.524803, 0, -0.851223, -2.53536, 2.23827, 5.23588)
 
 [node name="block-grass-overhang-low13" parent="." instance=ExtResource("5_wse8f")]
-transform = Transform3D(-0.84623, 0, 0.532817, 0, 1, 0, -0.532817, 0, -0.84623, 0, 3.82138, 10.9836)
+transform = Transform3D(-0.84623, 0, 0.532817, 0, 1, 0, -0.532817, 0, -0.84623, -2.12847, 3.82138, 10.9836)
 
 [node name="block-grass-hexagon9" parent="." instance=ExtResource("2_pkg7o")]
 transform = Transform3D(-0.812938, 0, -0.58235, 0, 1, 0, 0.58235, 0, -0.812938, 0, 0, 1.95685)

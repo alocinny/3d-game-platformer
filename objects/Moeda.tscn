@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://dvgcfyx1g36pm"]
+
+[ext_resource type="PackedScene" uid="uid://dt6actl1tcs13" path="res://objects/coin_gold_2.tscn" id="1_rc5vq"]
+
+[node name="Moeda" type="Node3D"]
+
+[node name="coin-gold2" parent="." instance=ExtResource("1_rc5vq")]

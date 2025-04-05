@@ -19,6 +19,7 @@ jump_velocity = 10.0
 gravity = 30.0
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+layers = 3
 mesh = SubResource("CapsuleMesh_u8vuu")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
