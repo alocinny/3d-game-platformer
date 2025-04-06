@@ -1,0 +1,54 @@
+[gd_scene load_steps=6 format=3 uid="uid://qifceecwgmqu"]
+
+[ext_resource type="PackedScene" uid="uid://cs338myx80ync" path="res://models/block-moving.glb" id="1_03imb"]
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_yk3yb"]
+points = PackedVector3Array(-0.400059, 0, -0.5, -0.468383, 0, -0.468383, -0.400059, 0.3, -0.5, 0.399961, 0, -0.5, -0.5, 0, -0.400059, -0.468383, 0.3, -0.468383, 0.399961, 0.3, -0.5, 0.468285, 0, -0.468383, -0.5, 0.3, -0.400059, -0.5, 0, 0.399961, 0.468285, 0.3, -0.468383, 0.5, 0, -0.400059, -0.5, 0.3, 0.399961, -0.468383, 0, 0.468285, 0.5, 0.3, -0.400059, 0.5, 0, 0.399961, -0.468383, 0.3, 0.468285, -0.400059, 0, 0.5, 0.5, 0.3, 0.399961, 0.468285, 0, 0.468285, -0.400059, 0.3, 0.5, 0.399961, 0, 0.5, 0.468285, 0.3, 0.468285, 0.399961, 0.3, 0.5)
+
+[sub_resource type="Animation" id="Animation_qyu5h"]
+resource_name = "default"
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.500547),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector3(0, 0, 0), Vector3(0, 4, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_ylqs8"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(0, 0, 0)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_subab"]
+_data = {
+&"RESET": SubResource("Animation_ylqs8"),
+&"default": SubResource("Animation_qyu5h")
+}
+
+[node name="block-moving" instance=ExtResource("1_03imb")]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." index="1"]
+shape = SubResource("ConvexPolygonShape3D_yk3yb")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." index="2"]
+libraries = {
+&"": SubResource("AnimationLibrary_subab")
+}
+speed_scale = 0.2
