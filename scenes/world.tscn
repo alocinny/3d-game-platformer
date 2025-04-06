@@ -15,8 +15,8 @@ size = Vector2(15, 40)
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_dwbse"]
 albedo_color = Color(0, 0.756863, 0.541176, 1)
 
-[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_fj7yv"]
-data = PackedVector3Array(5, 0, 5, -5, 0, 5, 5, 0, -5, -5, 0, 5, -5, 0, -5, 5, 0, -5)
+[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_4mrxx"]
+data = PackedVector3Array(7.5, 0, 20, -7.5, 0, 20, 7.5, 0, -20, -7.5, 0, 20, -7.5, 0, -20, 7.5, 0, -20)
 
 [node name="World" type="Node3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -1.53059)
@@ -28,8 +28,9 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -6.26208)
 mesh = SubResource("PlaneMesh_f3sb7")
 surface_material_override/0 = SubResource("StandardMaterial3D_dwbse")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Ground"]
-shape = SubResource("ConcavePolygonShape3D_fj7yv")
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="Ground"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -6.26208)
+shape = SubResource("ConcavePolygonShape3D_4mrxx")
 
 [node name="blocos" type="Node3D" parent="."]
 
