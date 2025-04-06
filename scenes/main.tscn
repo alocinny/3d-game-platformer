@@ -20,7 +20,7 @@ glow_enabled = true
 [node name="Main" type="Node3D"]
 
 [node name="Camera3D" type="Camera3D" parent="."]
-transform = Transform3D(-0.224194, -0.515507, 0.827036, -0.0163632, 0.850511, 0.525703, -0.974407, 0.104327, -0.199115, 4.48348, 7.49857, 3.37705)
+transform = Transform3D(-0.224194, -0.515507, 0.827037, -0.0163632, 0.850511, 0.525703, -0.974407, 0.104327, -0.199115, 4.48348, 7.49857, 5.85673)
 script = ExtResource("1_sugp2")
 offset = Vector3(0, 2.605, -1.88)
 follow_speed = 6.0
@@ -35,7 +35,7 @@ shadow_enabled = true
 
 [node name="Player" parent="." instance=ExtResource("1_0wfyh")]
 unique_name_in_owner = true
-transform = Transform3D(0.414733, 0, 0, 0, 0.414733, 0, 0, 0, 0.414733, 0, 5.59986, 5.36051)
+transform = Transform3D(0.414733, 0, 0, 0, 0.414733, 0, 0, 0, 0.414733, 0, 5.59986, 7.84019)
 speed = 3.0
 jump_velocity = 9.4
 

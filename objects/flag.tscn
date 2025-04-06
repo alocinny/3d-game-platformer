@@ -1,0 +1,12 @@
+[gd_scene load_steps=3 format=3 uid="uid://cvpnql07dcjvw"]
+
+[ext_resource type="PackedScene" uid="uid://lrq46txw6wbo" path="res://models/flag.glb" id="1_vjerf"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_2iksx"]
+size = Vector3(0.454651, 0.916992, 0.134766)
+
+[node name="flag" instance=ExtResource("1_vjerf")]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." index="1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.151703, 0.447153, 0)
+shape = SubResource("BoxShape3D_2iksx")
