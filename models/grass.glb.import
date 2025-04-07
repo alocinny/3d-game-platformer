@@ -13,7 +13,7 @@ dest_files=["res://.godot/imported/grass.glb-0ce858eae1c69c894a569863f13e24f1.sc
 
 [params]
 
-nodes/root_type="StaticBody3D"
+nodes/root_type="Area3D"
 nodes/root_name=""
 nodes/apply_root_scale=true
 nodes/root_scale=1.0

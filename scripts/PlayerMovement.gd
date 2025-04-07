@@ -41,3 +41,13 @@ func change_velocity(movement_vector: Vector3, delta):
 		#var smooth_rotation = Quaternion(basis).slerp(target_rotation, delta * 5.0)
 		#
 		#global_transform.basis = Basis(smooth_rotation)
+		
+var moedas_coletadas: int = 0
+
+func adicionar_moeda(valor: int = 1):
+	moedas_coletadas += valor
+	print("moedas: %d" % moedas_coletadas)
+	
+	var hud = get_tree().get_current_scene().get_node("HUD")
+	hud.atualizar_moedas(moedas_coletadas)
+	

@@ -1,0 +1,26 @@
+[gd_scene load_steps=4 format=3 uid="uid://cjht8bxm3nals"]
+
+[ext_resource type="Script" uid="uid://dvm1ecnioqpx1" path="res://scripts/HUD.gd" id="1_ek3oe"]
+[ext_resource type="Texture2D" uid="uid://kxnb3bv8ck3m" path="res://UI/kenney_ui-pack/PNG/coin-gold.png" id="2_ek3oe"]
+[ext_resource type="FontFile" uid="uid://d0wrigbhryx5j" path="res://UI/kenney_kenney-fonts/Fonts/Kenney Mini.ttf" id="3_mg525"]
+
+[node name="HUD" type="CanvasLayer"]
+script = ExtResource("1_ek3oe")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="TextureRect" type="TextureRect" parent="HBoxContainer"]
+layout_mode = 2
+texture = ExtResource("2_ek3oe")
+
+[node name="LabelMoedas" type="Label" parent="HBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(1.44392e-06, 0, 0.569404, 1)
+theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("3_mg525")
+theme_override_font_sizes/font_size = 30
+text = " 0"
+horizontal_alignment = 1
+vertical_alignment = 1

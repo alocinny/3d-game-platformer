@@ -13,7 +13,7 @@ dest_files=["res://.godot/imported/flag.glb-0b6fa3c4b5180c1221a26057702dcf53.scn
 
 [params]
 
-nodes/root_type=""
+nodes/root_type="RigidBody3D"
 nodes/root_name=""
 nodes/apply_root_scale=true
 nodes/root_scale=1.0

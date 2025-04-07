@@ -13,7 +13,7 @@ dest_files=["res://.godot/imported/rocks.glb-e966ade5fa54fd7244ecfd6e5807d3b1.sc
 
 [params]
 
-nodes/root_type=""
+nodes/root_type="StaticBody3D"
 nodes/root_name=""
 nodes/apply_root_scale=true
 nodes/root_scale=1.0
