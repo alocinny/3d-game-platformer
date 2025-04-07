@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="3d-jogo-platformer"
-run/main_scene="uid://b4kg0sxt3y7xk"
+run/main_scene="uid://dmpp6r7bpiwit"
 config/features=PackedStringArray("4.4", "Forward Plus")
 config/icon="res://icon.svg"
 
