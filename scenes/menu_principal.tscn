@@ -1,6 +1,7 @@
-[gd_scene load_steps=3 format=3 uid="uid://dmpp6r7bpiwit"]
+[gd_scene load_steps=4 format=3 uid="uid://dmpp6r7bpiwit"]
 
 [ext_resource type="Script" uid="uid://drsibld3f3s84" path="res://button.gd" id="1_i85hu"]
+[ext_resource type="FontFile" uid="uid://d0wrigbhryx5j" path="res://UI/kenney_kenney-fonts/Fonts/Kenney Mini.ttf" id="1_iep14"]
 [ext_resource type="Texture2D" uid="uid://rog1l81g8a57" path="res://UI/kenney_ui-pack/Vector/Blue/button_rectangle_border.svg" id="1_mk4g1"]
 
 [node name="MenuPrincipal" type="Control"]
@@ -24,6 +25,7 @@ alignment = 1
 
 [node name="Label" type="Label" parent="CenterContainer/VBoxContainer"]
 layout_mode = 2
+theme_override_fonts/font = ExtResource("1_iep14")
 text = "PLATFORMER 3D"
 horizontal_alignment = 1
 vertical_alignment = 1
@@ -40,7 +42,8 @@ offset_left = 7.0
 offset_top = 6.0
 offset_right = 194.0
 offset_bottom = 65.0
-theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_color = Color(0, 0, 0.447059, 1)
+theme_override_fonts/font = ExtResource("1_iep14")
 theme_override_font_sizes/font_size = 30
 text = "JOGAR"
 horizontal_alignment = 1
