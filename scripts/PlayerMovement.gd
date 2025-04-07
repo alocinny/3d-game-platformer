@@ -48,3 +48,6 @@ func adicionar_moeda(valor: int = 1):
 	moedas_coletadas += valor
 	print("moedas: %d" % moedas_coletadas)
 	
+	var hud = get_tree().get_current_scene().get_node("HUD")
+	hud.atualizar_moedas(moedas_coletadas)
+	
