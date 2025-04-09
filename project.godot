@@ -19,6 +19,10 @@ config/icon="res://icon.svg"
 
 project/assembly_name="3d-jogo-platformer"
 
+[global_group]
+
+Player=""
+
 [input]
 
 forward={
