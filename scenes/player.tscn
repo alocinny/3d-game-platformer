@@ -13,7 +13,7 @@ material = SubResource("StandardMaterial3D_dqkch")
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_3vyb7"]
 
-[node name="Player" type="CharacterBody3D"]
+[node name="Player" type="CharacterBody3D" groups=["Player"]]
 script = ExtResource("1_g2els")
 speed = 5.0
 jump_velocity = 10.0
